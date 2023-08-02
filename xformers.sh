@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo "Modifying relauncher.py..."
+sed -i 's/while (true):/while (n<1):/' /workspace/stable-diffusion-webui/relauncher.py
+
+echo "Installing packaging..."
+pip install packaging
+
 echo "Removing /workspace/venv..."
 rm -r /workspace/venv
 
