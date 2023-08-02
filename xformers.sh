@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Modifying relauncher.py..."
-sed -i 's/while (true):/while (n<1):/' /workspace/stable-diffusion-webui/relauncher.py
+sed -i 's/while True:/while (n<1):/' /workspace/stable-diffusion-webui/relauncher.py
 
 echo "Removing /workspace/venv..."
 rm -r /workspace/venv
